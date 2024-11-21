@@ -1,8 +1,8 @@
 Project Testing & Security 2024-2025 2e jaarsvak
-- De applicatie (en het testen ervan) 
--Unit testen – TDD 
-- Integratie testen
-- Acceptatie testen
+  - De applicatie (en het testen ervan) 
+  - Unit testen – TDD 
+  - Integratie testen
+  - Acceptatie testen
 * C# voor de backend-programmering.
 * xUnit voor unit testing van individuele methoden.
 * Test-Driven Development (TDD) waarbij tests eerst worden geschreven voordat de code wordt ontwikkeld.
