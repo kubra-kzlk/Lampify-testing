@@ -1,9 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\Lampify_testing\\",
+  "WorkspaceRootPath": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\lampify_testing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lampcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lampcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 24,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,13 +118,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LampController.cs",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampController.cs",
+              "RelativeDocumentMoniker": "LampController.cs",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampController.cs",
+              "RelativeToolTip": "LampController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T16:51:16.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Lamp.cs",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\Lamp.cs",
+              "RelativeDocumentMoniker": "Lamp.cs",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\Lamp.cs",
+              "RelativeToolTip": "Lamp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T16:51:10.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\Lampify_testing\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\Lampify_testing\\Program.cs",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T16:46:32.57Z",
               "EditorCaption": ""

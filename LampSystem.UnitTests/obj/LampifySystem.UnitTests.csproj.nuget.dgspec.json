@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\Lampify_testing\\Lampify_testing.csproj": {}
+    "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\LampSystem.UnitTests\\LampifySystem.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\Lampify_testing\\Lampify_testing.csproj": {
+    "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\LampSystem.UnitTests\\LampifySystem.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\Lampify_testing\\Lampify_testing.csproj",
-        "projectName": "Lampify_testing",
-        "projectPath": "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\Lampify_testing\\Lampify_testing.csproj",
+        "projectUniqueName": "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\LampSystem.UnitTests\\LampifySystem.UnitTests.csproj",
+        "projectName": "LampifySystem.UnitTests",
+        "projectPath": "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\LampSystem.UnitTests\\LampifySystem.UnitTests.csproj",
         "packagesPath": "C:\\Users\\flowe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\Lampify_testing\\obj\\",
+        "outputPath": "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\LampSystem.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\flowe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
