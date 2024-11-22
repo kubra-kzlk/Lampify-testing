@@ -1,0 +1,15 @@
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\bin\Debug\net6.0\Lampify_testing.exe
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\bin\Debug\net6.0\Lampify_testing.deps.json
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\bin\Debug\net6.0\Lampify_testing.runtimeconfig.json
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\bin\Debug\net6.0\Lampify_testing.dll
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\bin\Debug\net6.0\Lampify_testing.pdb
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.AssemblyInfoInputs.cache
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.AssemblyInfo.cs
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.csproj.CoreCompileInputs.cache
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.sourcelink.json
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.dll
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\refint\Lampify_testing.dll
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.pdb
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.genruntimeconfig.cache
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\ref\Lampify_testing.dll
