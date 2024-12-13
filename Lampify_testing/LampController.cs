@@ -6,15 +6,24 @@ using System.Threading.Tasks;
 
 namespace Lampify_testing
 {// Verantwoordelijk voor de bediening van de lamp, bv het in- en uitschakelen.
-    public class LampController: ILamp
+    public class LampController : ILamp
     {
         private readonly Lamp _lamp;
         private int _errorCount = 0;
+        private readonly ILightSensorApi _lightSensorApi; //DI
         private const int MaxErrorCount = 3;
+        public enum Mood
+        {
+            Cozy,
+            Angry,
+            Bright,
+            Dark
+        }
 
-        public LampController(Lamp lamp)
+        public LampController(Lamp lamp, ILightSensorApi lightSensorApi)
         {
             _lamp = lamp;
+            _lightSensorApi = lightSensorApi;
         }
 
         public void ToggleLamp()//zet de lamp aan als deze uit is, of uit als deze aan is
@@ -65,5 +74,13 @@ namespace Lampify_testing
         public bool GetLampStatus() => _lamp.IsOn;
         public int GetBrightness() => _lamp.Brightness;
         public string GetColor() => _lamp.Color;
+
+        public void AdjustLighting(Mood mood)
+        {
+            int currentLux = _lightSensorApi.GetLightIntensity(); // Lichtsterkte lux ophalen via API
+            Console.WriteLine($"[{DateTime.Now}] Currrent light intensity: {currentLux} lux");
+
+           
+        }
     }
 }
