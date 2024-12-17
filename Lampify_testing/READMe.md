@@ -46,8 +46,27 @@ Deze oplossing is ontworpen om een lamp te beheren met de volgende functionalite
 Testdoelen (ZOMBIES)
 
 Z: Zorg dat de lamp aan gaat als het donker is (minder dan 500 lux).
+
+    Test: AdjustLighting_TurnsOnLamp_WhenDarkEnvironment - Deze test controleert of de lamp wordt ingeschakeld wanneer de lichtsterkte onder de 500 lux ligt
+
 O: Ontdek of de lamp de juiste kleur en helderheid krijgt op basis van de mood.
+
+    Test: AdjustLighting_SetsCozyMood_WhenDarkEnvironment - Deze test controleert of de lamp de helderheid op 50 en de kleur op rood instelt wanneer de mood 'Cozy' is in een donkere omgeving.
+    Test: AdjustLighting_SetsAngryMood_WhenDarkEnvironment - Deze test controleert of de lamp de helderheid op 100 en de kleur op rood instelt wanneer de mood 'Angry' is in een donkere omgeving.
+
 M: Maak zeker dat de lamp uitgaat als het donker is en de mood 'Dark' is.
+
+    Test: AdjustLighting_TurnsOffLamp_WhenDarkMood - Deze test controleert of de lamp wordt uitgeschakeld wanneer de mood 'Dark' is en de omgeving donker is.
+
 B: Bevestig dat de lamp in veilige modus gaat na meerdere fouten.
+    
+    Test: ApplySettings_ThrowsException_WhenBrightnessOutOfRange - Deze test controleert of een uitzondering wordt gegooid wanneer een ongeldige helderheid wordt ingesteld, en of de lamp in veilige modus gaat na meerdere fouten.
+
 I: Identificeer dat de juiste foutmeldingen worden weergegeven bij het instellen van ongeldige waarden.
+
+    Test: AdjustLighting_ThrowsException_WhenInvalidMood - Deze test controleert of een uitzondering wordt gegooid wanneer een ongeldige mood wordt doorgegeven aan de AdjustLighting-methode.
+    Test: ApplySettings_ThrowsException_WhenColorIsNull - Deze test controleert of een uitzondering wordt gegooid wanneer een ongeldige kleur (null) wordt doorgegeven aan de ApplySettings-methode.
+
 E: Evalueer de status van de lamp na elke actie
+   
+    Test: AdjustLighting_HandlesError_WhenLightSensorFails - Deze test controleert of de status van de lamp correct wordt geëvalueerd en of de juiste foutafhandeling plaatsvindt wanneer de lichtsensor faalt.

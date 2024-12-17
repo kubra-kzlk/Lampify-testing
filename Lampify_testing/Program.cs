@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+             
             //Lamp-klasse te instantiëren vanuit de Main-methode
             // Instantie van de Lamp-klasse maken
 

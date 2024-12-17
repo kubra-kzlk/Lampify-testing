@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lampify_testing
 { //Bevat de logica vr aan/uit zetten, aanpassen helderheid en kleur.
-    public class Lamp
+    public class Lamp : ILamp
     {
         public bool IsOn { get; private set; } = false; //geeft aan of de lamp aan of uit is
         public int Brightness { get; private set; } = 0;

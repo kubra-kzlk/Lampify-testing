@@ -14,5 +14,10 @@ namespace Lampify_testing
             // Simuleer het ophalen van de lichtsterkte door random lux te genereren
             return _random.Next(0, 1001); 
         }
+
+        Task<int> ILightSensorApi.GetLightIntensity()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

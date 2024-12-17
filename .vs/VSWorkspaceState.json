@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Lampify_testing"
+    "\\Lampify_testing",
+    "\\Lampify_UnitTests"
   ],
-  "SelectedNode": "\\Lampify_testing\\Lampify_testing.sln",
+  "SelectedNode": "\\Lampify_UnitTests\\LampTests.cs",
   "PreviewInSolutionExplorer": false
 }
