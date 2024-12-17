@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Lampify_testing
-{
+{// interface vr ophalen lichtsterkte
     public interface ILightSensorApi
     {
-       public int GetLightIntensity(); // Haalt lichtsterkte op in lux
+       Task< int> GetLightIntensity(); // Haalt lichtsterkte op in lux
     }
 }

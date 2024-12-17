@@ -5,19 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Lampify_testing
-{// Verantwoordelijk voor de bediening van de lamp, bv het in- en uitschakelen.
+{// controller bvt logica vr h aansturen vd lamp obvd lichtsterkte en mood, die je kan testen, Verantwoordelijk voor de bediening van de lamp, bv het in- en uitschakelen.
     public class LampController : ILamp
     {
         private readonly Lamp _lamp;
         private int _errorCount = 0;
-        private readonly ILightSensorApi _lightSensorApi; //DI
+        private readonly ILightSensorApi _lightSensorApi; //DI, api vr lichtsterkte
         private const int MaxErrorCount = 3;
         public enum Mood
         {
-            Cozy,
-            Angry,
-            Bright,
-            Dark
+            Cozy, // Zet de helderheid op 50 en de kleur op rood
+            Angry, //Zet de helderheid op 100 en de kleur op rood
+            Bright, //Zet de helderheid op 100 en de kleur op wit
+            Dark //Zet de lamp uit als deze aan is
         }
 
         public LampController(Lamp lamp, ILightSensorApi lightSensorApi)
@@ -54,12 +54,10 @@ namespace Lampify_testing
             {
                 _errorCount++;
                 Console.WriteLine($"[{DateTime.Now}] Error applying settings: {ex.Message}. Error count: {_errorCount}");//logging: error bij instellen van helderheid/kleur
-
                 if (_errorCount >= MaxErrorCount)
                 {
                     EnterSafeMode();
                 }
-
                 throw;
             }
         }
@@ -75,12 +73,35 @@ namespace Lampify_testing
         public int GetBrightness() => _lamp.Brightness;
         public string GetColor() => _lamp.Color;
 
+        //lamp ovb mood instellen
         public void AdjustLighting(Mood mood)
         {
             int currentLux = _lightSensorApi.GetLightIntensity(); // Lichtsterkte lux ophalen via API
-            Console.WriteLine($"[{DateTime.Now}] Currrent light intensity: {currentLux} lux");
-
-           
+            Console.WriteLine($" Currrent light intensity: {currentLux} lux");         
+            if (currentLux < 500)
+            { // Het is te donker, zet de lamp aan
+                ToggleLamp();
+            }
+            switch (mood)
+            {
+                case Mood.Cozy:
+                    ApplySettings(50, "Red"); // Stel de helderheid en kleur in voor een gezellige sfeer
+                    break;
+                case Mood.Angry:
+                    ApplySettings(100, "Red"); // Helder rood licht voor een boze sfeer
+                    break;
+                case Mood.Bright:
+                    ApplySettings(100, "White"); // Helder wit licht voor een heldere sfeer
+                    break;
+                case Mood.Dark:
+                    if (_lamp.IsOn)
+                    {
+                        ToggleLamp(); // Zet de lamp uit als het donker is
+                    }
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(mood), "Invalid mood specified.");
+            }
         }
     }
 }
