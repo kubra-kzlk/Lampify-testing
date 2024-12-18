@@ -1,21 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "MfGiI5yope532lQRI7Lj1lEs+xbCS617QltlRtBY93WDL9h7pqbPuilm4HXBXboYJcyceyo3JdngiqyU0I1YLA==",
+  "dgSpecHash": "nXI7K+MyPUxI4TiAAsuM/gvudHg1WpjnwN8sBhv7HYFRiPWc1DCFVDl3Dagf++6PlNMnWKQ80LftqSGGb8jM3w==",
   "success": true,
   "projectFilePath": "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\Lampify_IntegrationTests\\Lampify_IntegrationTests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\flowe\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.5.0\\microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\microsoft.testplatform.testhost\\17.5.0\\microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
+    "C:\\Users\\flowe\\.nuget\\packages\\moq\\4.20.72\\moq.4.20.72.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
-    "C:\\Users\\flowe\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\flowe\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
+    "C:\\Users\\flowe\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\flowe\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []

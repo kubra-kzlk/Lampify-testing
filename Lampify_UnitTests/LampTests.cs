@@ -102,7 +102,6 @@ namespace Lampify_UnitTests
         {
             // Arrange
             _lightSensorApiMock.Setup(api => api.GetLightIntensity()).Throws(new Exception("Sensor failure")); // Simulate sensor failure
-
             // Act & Assert
             Assert.ThrowsException<Exception>(() =>
                 _lampController.AdjustLighting(LampController.Mood.Cozy)); // Expect an exception due to sensor failure

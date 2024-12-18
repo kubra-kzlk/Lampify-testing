@@ -3,12 +3,13 @@
   <Class Name="Lampify_testing.Lamp">
     <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQAiAgAAAAIA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQAiAAAAAAAA=</HashCode>
       <FileName>Lamp.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Lampify_testing.LampController">
-    <Position X="1.25" Y="4.75" Width="1.5" />
+    <Position X="1.25" Y="5.25" Width="1.5" />
     <NestedTypes>
       <Enum Name="Lampify_testing.LampController.Mood" Collapsed="true">
         <TypeIdentifier>
@@ -17,30 +18,52 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAIAAAAEAAAAAAAhAAABBCAICgAAAAAACA=</HashCode>
+      <HashCode>ABAAAAAAAAAIAAAAEAAAAAAAhQAAABAAYCiAAAAAACA=</HashCode>
       <FileName>LampController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lampify_testing.LightSensorApi">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>LightSensorApi.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Lampify_testing.LightSensorApi">
-    <Position X="5" Y="4" Width="1.5" />
+  <Class Name="Lampify_testing.LightSensorData">
+    <Position X="6.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
-      <FileName>LightSensorApi.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LightSensorData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lampify_testing.LightSensorApiData">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA=</HashCode>
+      <FileName>LightSensorApiData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lampify_testing.LampStub">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAgAAAAAAAAAAAAAABAAAAAQAAAACAQAiAgAAAAIA=</HashCode>
+      <FileName>LampStub.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="Lampify_testing.ILamp">
     <Position X="1.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABACAAAgAAAAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQAiAAAAAAAA=</HashCode>
       <FileName>ILamp.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Lampify_testing.ILightSensorApi">
-    <Position X="5" Y="2.5" Width="1.5" />
+    <Position X="4.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>ILightSensorApi.cs</FileName>
     </TypeIdentifier>
   </Interface>

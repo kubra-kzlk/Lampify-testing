@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WKnlKfozVdj2hltuTMjqfyEFmfjuiBLyDoQ6umzKPJXvWsddz5fExvUpLFXDY8zBiNJfpQnOe7XaeJNsmgr56g==",
+  "dgSpecHash": "pTRweH2dgL2boZPFQmc0mN93RIeW2Lh1KRmVny09/2p3rgIzm2zlGJ+3PVS8SMePSXbTc3aBf7AVZnSr3V2vIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\flowe\\Documents\\2_Testing & Security\\project_testing\\Lampify_testing\\Lampify_testing.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\flowe\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

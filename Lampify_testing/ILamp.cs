@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lampify_testing
 {//interface vr lamp
-    internal interface ILamp
+    public interface ILamp
     {
-        void TurnOn();
+        public void TurnOn();
 
-        void TurnOff();
+        public void TurnOff();
 
-        void SetBrightness(int brightness);
+        public void SetBrightness(int brightness);
 
-        void SetColor(string color);
+        public void SetColor(string color);
 
-        bool IsOn { get; }
+        public bool IsOn { get; }
     }
 }

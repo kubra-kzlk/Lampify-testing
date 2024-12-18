@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Lampify_testing
 {
     public class LightSensorApi : ILightSensorApi
     {
-        private Random _random = new Random();
-        public int GetLightIntensity()
+        public string Url
         {
-            // Simuleer het ophalen van de lichtsterkte door random lux te genereren
-            return _random.Next(0, 1001); 
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
         }
 
-        Task<int> ILightSensorApi.GetLightIntensity()
+        public int GetLightIntensity()
         {
             throw new NotImplementedException();
         }

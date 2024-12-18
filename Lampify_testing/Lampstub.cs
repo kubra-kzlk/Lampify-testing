@@ -7,32 +7,42 @@ using System.Threading.Tasks;
 namespace Lampify_testing
 { //A stub is a simple implementation of an interface that allows you to control the behavior of the object during testing.
   //LampStub would implement the ILamp interface and provide basic functionality for testing purposes.
-    public class Lampstub : ILamp
+    public class LampStub : ILamp
     {
-        public bool IsOn { get; private set; }
-        public int Brightness { get; private set; }
-        public string Color { get; private set; }
+        private bool isOn = false;
+        private int brightness = 0;
+        private string color = "White"; // Default color
+
+        public bool IsOn
+        {
+            get { return isOn; }
+        }
+        public int Brightness
+        {
+            get { return brightness; }
+        }
+        public string Color
+        {
+            get { return color; }
+        }
         public void TurnOn()
         {
-            IsOn = true;
+            isOn = true;
             Console.WriteLine("Lamp is turned ON.");
         }
-
         public void TurnOff()
         {
-            IsOn = false;
+            isOn = false;
             Console.WriteLine("Lamp is turned OFF.");
         }
-
         public void SetBrightness(int brightness)
         {
-            Brightness = brightness;
+            this.brightness = brightness;
             Console.WriteLine($"Brightness set to {brightness}.");
         }
-
         public void SetColor(string color)
         {
-            Color = color;
+            this.color = color;
             Console.WriteLine($"Color set to {color}.");
         }
     }

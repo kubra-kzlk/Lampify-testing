@@ -16,7 +16,7 @@ Deze oplossing is ontworpen om een lamp te beheren met de volgende functionalite
 ### ILightSensorApi
 - **Methoden:** `GetLightIntensity()`
 ### ILamp
-- **Methoden:** `GetLampStatus()`,` GetBrightness()`, ` GetColor()`
+- **Methoden:** `TurnOn()`, `TurnOff()`, `SetBrightness(int brightness)`, `SetColor(string color)`, `IsOn { get; }`
 
 ## Klassen
 ### Lamp
@@ -26,12 +26,13 @@ Deze oplossing is ontworpen om een lamp te beheren met de volgende functionalite
 ### LampController
 - **Verantwoordelijkheden:** Beheert de lamp en implementeert de `ILamp`-interface.
 - **Functionaliteiten:**
-  - Aanpassingen via `ApplySettings`.
+  - Aanpassingen via `ApplySettings(int brightness, string color)`.
   - Mood-gebaseerde instellingen via `AdjustLighting`
   - Foutenlogica en veilige modus via `EnterSafeMode`
   - Lamp aan/uit zetten via `ToggleLamp`
 
  ## LightSensorApi
+ - **Verantwoordelijkheden:** Haalt de lichtsterkte op via een externe API.
  - **Methoden:**  `GetLightIntensity()`
 
  ## Enum

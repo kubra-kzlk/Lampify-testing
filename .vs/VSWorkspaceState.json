@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Lampify_AceptanceTests",
+    "\\Lampify_AceptanceTests\\StepDefinitions",
     "\\Lampify_testing",
     "\\Lampify_UnitTests"
   ],
-  "SelectedNode": "\\Lampify_UnitTests\\LampTests.cs",
+  "SelectedNode": "\\Lampify_AceptanceTests\\StepDefinitions\\LampSteps.cs",
   "PreviewInSolutionExplorer": false
 }
