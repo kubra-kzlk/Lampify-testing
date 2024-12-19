@@ -10,6 +10,8 @@ namespace Lampify_testing
     {
         public bool IsOn => throw new NotImplementedException();
 
+        public int Brightness => throw new NotImplementedException();
+
         public void TurnOn() //lamp aanzetten
         {
             throw new NotImplementedException();

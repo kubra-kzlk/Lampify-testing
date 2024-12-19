@@ -1,19 +1,44 @@
-﻿Feature: Lamp Failure Scenarios
+﻿Feature: Lamp Control
 
-  Scenario: Lamp fails to turn on
+  Scenario: Turn on the lamp
     Given the lamp is off
-    When I try to turn on the lamp
+    When the lamp is toggled
+    Then the lamp should be on
+
+  Scenario: Turn off the lamp
+    Given the lamp is on
+    When the lamp is toggled
     Then the lamp should be off
-    And an error message should be displayed
 
-  Scenario: Lamp fails to adjust brightness
-    Given the lamp is on
-    When I set the brightness to 100
-    Then the brightness should remain at the previous level
-    And an error message should be displayed
+  Scenario: Adjust lighting based on low light intensity
+    Given the lamp is off
+    When the light intensity is below the threshold
+    Then the lamp should be on
+    And the brightness should be 50
+    And the color should be "Warm White"
 
-  Scenario: Lamp fails to change color
+  Scenario: Adjust lighting based on high light intensity
+    Given the lamp is off
+    When the light intensity is above the threshold
+    Then the lamp should be on
+    And the brightness should be 100
+    And the color should be "Cool White"
+
+  Scenario: Set the mood of the lamp
+    Given the lamp is off
+    When the mood is set to "Cozy"
+    Then the lamp should be on
+    And the brightness should be 50
+    And the color should be "Warm White"
+
+  Scenario: Set the mood of the lamp to bright
+    Given the lamp is off
+    When the mood is set to "Bright"
+    Then the lamp should be on
+    And the brightness should be 100
+    And the color should be "Cool White"
+
+  Scenario: Check lamp in safe mode
     Given the lamp is on
-    When I change the color to "red"
-    Then the color should remain the same
-    And an error message should be displayed
+    When the lamp is toggled
+    Then the lamp should be in safe mode

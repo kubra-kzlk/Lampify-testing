@@ -61,14 +61,6 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
-            "SpecFlow.NUnit": {
-              "target": "Package",
-              "version": "[3.9.40, )"
-            },
-            "SpecFlow.Plus.LivingDocPlugin": {
-              "target": "Package",
-              "version": "[3.9.57, )"
-            },
             "Xunit.Gherkin.Quick": {
               "target": "Package",
               "version": "[4.5.0, )"

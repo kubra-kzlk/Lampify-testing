@@ -22,6 +22,7 @@ Deze oplossing is ontworpen om een lamp te beheren met de volgende functionalite
 ### Lamp
 - **Verantwoordelijkheden:** Houdt de status van de lamp bij, zoals `IsOn`, `Brightness` en `Color`.
 - **Methoden:** `TurnOn`, `TurnOff`, `SetBrightness`, `SetColor`.
+- **Properties:** `Brightness`
 
 ### LampController
 - **Verantwoordelijkheden:** Beheert de lamp en implementeert de `ILamp`-interface.

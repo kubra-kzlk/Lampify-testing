@@ -17,5 +17,6 @@ namespace Lampify_testing
         public void SetColor(string color);
 
         public bool IsOn { get; }
+        int Brightness { get; }
     }
 }

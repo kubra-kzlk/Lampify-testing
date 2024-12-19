@@ -9,42 +9,46 @@
       "AbsoluteMoniker": "D:0:0:{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}|..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_aceptancetests\\stepdefinitions\\lampfailuresteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}|..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_aceptancetests\\features\\lampfailure.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}|..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_aceptancetests\\features\\lamp.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lightsensordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lightsensordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\ilamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:ilamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lightsensorapidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lightsensorapidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lightsensorapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lightsensorapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lampstub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lampstub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lampcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lampcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\ilightsensorapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:ilightsensorapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\ilamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:ilamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lightsensorapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lightsensorapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lightsensordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lightsensordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_testing\\lampcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6943699A-4A9A-4AF8-A6E0-BC165EE4C9CB}|Lampify_testing.csproj|solutionrelative:lampcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}|..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_aceptancetests\\features\\lampfailure.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}|..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_aceptancetests\\features\\lamp.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}|..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj|c:\\users\\flowe\\documents\\2_testing \u0026 security\\project_testing\\lampify_aceptancetests\\lampify_aceptancetests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -57,99 +61,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 204,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 28,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LampFailure.feature",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Features\\LampFailure.feature",
-              "RelativeDocumentMoniker": "..\\Lampify_AceptanceTests\\Features\\LampFailure.feature",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Features\\LampFailure.feature",
-              "RelativeToolTip": "..\\Lampify_AceptanceTests\\Features\\LampFailure.feature",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQWSURBVDhPdVRLb1tFFP7mPnztaydObOcJcWolhDRpVURQAyWNWgItsGlZ0YoFEgseKxCCFWv4AWzYIxAgQVRVlSo1En1IoDRtSUEpRFWUd9I4DztOff269r18c\u002B0oSRGf9dkzZ2Y\u002BnznnzBH4P3zRGMARXxtHcbKZdMg1uFjCVCmJr9IFzg/Cdd2Dgm\u002BQnylBTISH0Kydhakco0WKGXKZKFDwEfLOJObLV/BN5h42nXxtzYNa\u002BwVeNBScNRPoMs5BNd6FppwUEM8qQmlz4UYBEVGFGhNCtLo6vW5UutGglNDvS8GvZLFc9mT2BF8zWzFgjiCjvwdXDAc1M9JX36MnQp0ia\u002BfQZrbgWEOf8KuGb7OYikARXYjrIXTrj7DjJHG/VJQyVcGYIvC8McwNFzkbUaCorf5mXIifx\u002BmWE1jMrWAwOoC34\u002BcYJuBu\u002Bk95SiEPkRmslZcZglVYrmcEPgqbGPSf4ui04F/XayHYbhl\u002BNYBOM46j4T6ciL2AOtrLtO\u002BDTp7BkH8IH4c9g\u002BZ9G6IPmkj4FX/ombqE\u002BLT3Q6zk1rBgLeO3jdtYyK9gPrcIh\u002B7NZhe8I8RuQp/msJszxhlbVQ\u002BBLrKpgopquzbXBNoDLUjbGUykJykyjzup\u002BxjfuoclXv8JBJj5ZhYVhatxkIiQpu2UsVFMYWLzDyQLG8iWLY9WOYd0aRu2U0LMiKA7lEDMFwWzXj0NBMmYHOwKepCeyW8Zv216Z9kWr\u002BlwEyPLT6PRgJebjuNi51s42TQIkzGuQep44dsVXCctUwugP9yDT3rex6stwzgUiiOshRHW6xE1GuEXfnQE2vFm6wj3fIAIbTXI4k7LQdXnVwIKIuoAX87hfKUokoV13FwfR4f5FE41vQSfZuB49DnPq8cMwZXVa5hgTKcy0yg5JabdHUfaGcWveavq4c38Iubsv1kSy\u002BvFTVxekQcmIT3ua\u002BiBrugIqkGWz2Hv6tfXf8fY2g0vtsQyZu0ZaqTkpOrhbLmIuOZHlx7lM0sUnILuU3TRHmhFzsnhFr3N2DsIaUHMsXymMv\u002BAe1jisijdG7hTuopfrIdSaq85vBOqxxnzdejic1r7afGxLoWqKEJ6ItPiU31MUoXZtinmdZ8k7/wlruV/xvfZDSmz95YXyzYsZw1HjQc8LYu0oeJWZCnVEud6YrTJiRTLkF/jp\u002BxVjLHyi/JR7heUhu1KgcHdRK8xx5UZWmXm5PNqkltqkE3gIUrudxQbxe3CHFIs0Br2BCUsiiYZT00sMUnzvOUOGlVZG0dImYElchxblcu4lR/FWG4GKdfrMrs4KCghl/8quWxHWTbZAnp9IVpkV5nmta/zBj/ibukSvn28yr3e/ffjYMd\u002BEhfqwjgf7OConZyGqCRxKVfED5a3/F8A/wKUXZtBUQWfiQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-12-18T22:13:36.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LightSensorData.cs",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LightSensorData.cs",
-              "RelativeDocumentMoniker": "LightSensorData.cs",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LightSensorData.cs",
-              "RelativeToolTip": "LightSensorData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T21:59:24.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LightSensorApi.cs",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LightSensorApi.cs",
-              "RelativeDocumentMoniker": "LightSensorApi.cs",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LightSensorApi.cs",
-              "RelativeToolTip": "LightSensorApi.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T21:58:56.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LampStub.cs",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampStub.cs",
-              "RelativeDocumentMoniker": "LampStub.cs",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampStub.cs",
-              "RelativeToolTip": "LampStub.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAADEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T21:58:43.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LampController.cs",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampController.cs",
-              "RelativeDocumentMoniker": "LampController.cs",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampController.cs",
-              "RelativeToolTip": "LampController.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAAAI8AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T21:58:26.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Lamp.cs",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\Lamp.cs",
-              "RelativeDocumentMoniker": "Lamp.cs",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\Lamp.cs",
-              "RelativeToolTip": "Lamp.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T21:58:12.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LampFailureSteps.cs",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\StepDefinitions\\LampFailureSteps.cs",
-              "RelativeDocumentMoniker": "..\\Lampify_AceptanceTests\\StepDefinitions\\LampFailureSteps.cs",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\StepDefinitions\\LampFailureSteps.cs",
-              "RelativeToolTip": "..\\Lampify_AceptanceTests\\StepDefinitions\\LampFailureSteps.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T21:52:42.09Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -244,27 +157,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Lampify_AceptanceTests.csproj",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj",
-              "RelativeDocumentMoniker": "..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj",
-              "RelativeToolTip": "..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-18T21:45:03.092Z"
+              "DocumentIndex": 3,
+              "Title": "READMe.md",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\READMe.md",
+              "RelativeDocumentMoniker": "READMe.md",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\READMe.md",
+              "RelativeToolTip": "READMe.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-12-19T11:46:57.659Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Lamp.feature",
-              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Features\\Lamp.feature",
-              "RelativeDocumentMoniker": "..\\Lampify_AceptanceTests\\Features\\Lamp.feature",
-              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Features\\Lamp.feature",
-              "RelativeToolTip": "..\\Lampify_AceptanceTests\\Features\\Lamp.feature",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQWSURBVDhPdVRLb1tFFP7mPnztaydObOcJcWolhDRpVURQAyWNWgItsGlZ0YoFEgseKxCCFWv4AWzYIxAgQVRVlSo1En1IoDRtSUEpRFWUd9I4DztOff269r18c\u002B0oSRGf9dkzZ2Y\u002BnznnzBH4P3zRGMARXxtHcbKZdMg1uFjCVCmJr9IFzg/Cdd2Dgm\u002BQnylBTISH0Kydhakco0WKGXKZKFDwEfLOJObLV/BN5h42nXxtzYNa\u002BwVeNBScNRPoMs5BNd6FppwUEM8qQmlz4UYBEVGFGhNCtLo6vW5UutGglNDvS8GvZLFc9mT2BF8zWzFgjiCjvwdXDAc1M9JX36MnQp0ia\u002BfQZrbgWEOf8KuGb7OYikARXYjrIXTrj7DjJHG/VJQyVcGYIvC8McwNFzkbUaCorf5mXIifx\u002BmWE1jMrWAwOoC34\u002BcYJuBu\u002Bk95SiEPkRmslZcZglVYrmcEPgqbGPSf4ui04F/XayHYbhl\u002BNYBOM46j4T6ciL2AOtrLtO\u002BDTp7BkH8IH4c9g\u002BZ9G6IPmkj4FX/ombqE\u002BLT3Q6zk1rBgLeO3jdtYyK9gPrcIh\u002B7NZhe8I8RuQp/msJszxhlbVQ\u002BBLrKpgopquzbXBNoDLUjbGUykJykyjzup\u002BxjfuoclXv8JBJj5ZhYVhatxkIiQpu2UsVFMYWLzDyQLG8iWLY9WOYd0aRu2U0LMiKA7lEDMFwWzXj0NBMmYHOwKepCeyW8Zv216Z9kWr\u002BlwEyPLT6PRgJebjuNi51s42TQIkzGuQep44dsVXCctUwugP9yDT3rex6stwzgUiiOshRHW6xE1GuEXfnQE2vFm6wj3fIAIbTXI4k7LQdXnVwIKIuoAX87hfKUokoV13FwfR4f5FE41vQSfZuB49DnPq8cMwZXVa5hgTKcy0yg5JabdHUfaGcWveavq4c38Iubsv1kSy\u002BvFTVxekQcmIT3ua\u002BiBrugIqkGWz2Hv6tfXf8fY2g0vtsQyZu0ZaqTkpOrhbLmIuOZHlx7lM0sUnILuU3TRHmhFzsnhFr3N2DsIaUHMsXymMv\u002BAe1jisijdG7hTuopfrIdSaq85vBOqxxnzdejic1r7afGxLoWqKEJ6ItPiU31MUoXZtinmdZ8k7/wlruV/xvfZDSmz95YXyzYsZw1HjQc8LYu0oeJWZCnVEud6YrTJiRTLkF/jp\u002BxVjLHyi/JR7heUhu1KgcHdRK8xx5UZWmXm5PNqkltqkE3gIUrudxQbxe3CHFIs0Br2BCUsiiYZT00sMUnzvOUOGlVZG0dImYElchxblcu4lR/FWG4GKdfrMrs4KCghl/8quWxHWTbZAnp9IVpkV5nmta/zBj/ibukSvn28yr3e/ffjYMd\u002BEhfqwjgf7OConZyGqCRxKVfED5a3/F8A/wKUXZtBUQWfiQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-12-18T21:39:14.934Z",
+              "DocumentIndex": 9,
+              "Title": "LightSensorData.cs",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LightSensorData.cs",
+              "RelativeDocumentMoniker": "LightSensorData.cs",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LightSensorData.cs",
+              "RelativeToolTip": "LightSensorData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T21:59:24.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LightSensorApi.cs",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LightSensorApi.cs",
+              "RelativeDocumentMoniker": "LightSensorApi.cs",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LightSensorApi.cs",
+              "RelativeToolTip": "LightSensorApi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T21:58:56.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LampStub.cs",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampStub.cs",
+              "RelativeDocumentMoniker": "LampStub.cs",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampStub.cs",
+              "RelativeToolTip": "LampStub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T21:58:43.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LampFailureSteps.cs",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\StepDefinitions\\LampFailureSteps.cs",
+              "RelativeDocumentMoniker": "..\\Lampify_AceptanceTests\\StepDefinitions\\LampFailureSteps.cs",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\StepDefinitions\\LampFailureSteps.cs",
+              "RelativeToolTip": "..\\Lampify_AceptanceTests\\StepDefinitions\\LampFailureSteps.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAkwBwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T21:52:42.09Z",
               "EditorCaption": ""
             },
             {
@@ -275,9 +228,74 @@
               "RelativeDocumentMoniker": "..\\Lampify_AceptanceTests\\StepDefinitions\\LampSteps.cs",
               "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\StepDefinitions\\LampSteps.cs",
               "RelativeToolTip": "..\\Lampify_AceptanceTests\\StepDefinitions\\LampSteps.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAswD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T21:37:22.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LampFailure.feature",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Features\\LampFailure.feature",
+              "RelativeDocumentMoniker": "..\\Lampify_AceptanceTests\\Features\\LampFailure.feature",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Features\\LampFailure.feature",
+              "RelativeToolTip": "..\\Lampify_AceptanceTests\\Features\\LampFailure.feature",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQWSURBVDhPdVRLb1tFFP7mPnztaydObOcJcWolhDRpVURQAyWNWgItsGlZ0YoFEgseKxCCFWv4AWzYIxAgQVRVlSo1En1IoDRtSUEpRFWUd9I4DztOff269r18c\u002B0oSRGf9dkzZ2Y\u002BnznnzBH4P3zRGMARXxtHcbKZdMg1uFjCVCmJr9IFzg/Cdd2Dgm\u002BQnylBTISH0Kydhakco0WKGXKZKFDwEfLOJObLV/BN5h42nXxtzYNa\u002BwVeNBScNRPoMs5BNd6FppwUEM8qQmlz4UYBEVGFGhNCtLo6vW5UutGglNDvS8GvZLFc9mT2BF8zWzFgjiCjvwdXDAc1M9JX36MnQp0ia\u002BfQZrbgWEOf8KuGb7OYikARXYjrIXTrj7DjJHG/VJQyVcGYIvC8McwNFzkbUaCorf5mXIifx\u002BmWE1jMrWAwOoC34\u002BcYJuBu\u002Bk95SiEPkRmslZcZglVYrmcEPgqbGPSf4ui04F/XayHYbhl\u002BNYBOM46j4T6ciL2AOtrLtO\u002BDTp7BkH8IH4c9g\u002BZ9G6IPmkj4FX/ombqE\u002BLT3Q6zk1rBgLeO3jdtYyK9gPrcIh\u002B7NZhe8I8RuQp/msJszxhlbVQ\u002BBLrKpgopquzbXBNoDLUjbGUykJykyjzup\u002BxjfuoclXv8JBJj5ZhYVhatxkIiQpu2UsVFMYWLzDyQLG8iWLY9WOYd0aRu2U0LMiKA7lEDMFwWzXj0NBMmYHOwKepCeyW8Zv216Z9kWr\u002BlwEyPLT6PRgJebjuNi51s42TQIkzGuQep44dsVXCctUwugP9yDT3rex6stwzgUiiOshRHW6xE1GuEXfnQE2vFm6wj3fIAIbTXI4k7LQdXnVwIKIuoAX87hfKUokoV13FwfR4f5FE41vQSfZuB49DnPq8cMwZXVa5hgTKcy0yg5JabdHUfaGcWveavq4c38Iubsv1kSy\u002BvFTVxekQcmIT3ua\u002BiBrugIqkGWz2Hv6tfXf8fY2g0vtsQyZu0ZaqTkpOrhbLmIuOZHlx7lM0sUnILuU3TRHmhFzsnhFr3N2DsIaUHMsXymMv\u002BAe1jisijdG7hTuopfrIdSaq85vBOqxxnzdejic1r7afGxLoWqKEJ6ItPiU31MUoXZtinmdZ8k7/wlruV/xvfZDSmz95YXyzYsZw1HjQc8LYu0oeJWZCnVEud6YrTJiRTLkF/jp\u002BxVjLHyi/JR7heUhu1KgcHdRK8xx5UZWmXm5PNqkltqkE3gIUrudxQbxe3CHFIs0Br2BCUsiiYZT00sMUnzvOUOGlVZG0dImYElchxblcu4lR/FWG4GKdfrMrs4KCghl/8quWxHWTbZAnp9IVpkV5nmta/zBj/ibukSvn28yr3e/ffjYMd\u002BEhfqwjgf7OConZyGqCRxKVfED5a3/F8A/wKUXZtBUQWfiQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-12-18T22:13:36.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LampController.cs",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampController.cs",
+              "RelativeDocumentMoniker": "LampController.cs",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LampController.cs",
+              "RelativeToolTip": "LampController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T21:58:26.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Lamp.cs",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\Lamp.cs",
+              "RelativeDocumentMoniker": "Lamp.cs",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\Lamp.cs",
+              "RelativeToolTip": "Lamp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T21:58:12.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Lampify_AceptanceTests.csproj",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj",
+              "RelativeDocumentMoniker": "..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj",
+              "RelativeToolTip": "..\\Lampify_AceptanceTests\\Lampify_AceptanceTests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-18T21:45:03.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Lamp.feature",
+              "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Features\\Lamp.feature",
+              "RelativeDocumentMoniker": "..\\Lampify_AceptanceTests\\Features\\Lamp.feature",
+              "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_AceptanceTests\\Features\\Lamp.feature",
+              "RelativeToolTip": "..\\Lampify_AceptanceTests\\Features\\Lamp.feature",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAoAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQWSURBVDhPdVRLb1tFFP7mPnztaydObOcJcWolhDRpVURQAyWNWgItsGlZ0YoFEgseKxCCFWv4AWzYIxAgQVRVlSo1En1IoDRtSUEpRFWUd9I4DztOff269r18c\u002B0oSRGf9dkzZ2Y\u002BnznnzBH4P3zRGMARXxtHcbKZdMg1uFjCVCmJr9IFzg/Cdd2Dgm\u002BQnylBTISH0Kydhakco0WKGXKZKFDwEfLOJObLV/BN5h42nXxtzYNa\u002BwVeNBScNRPoMs5BNd6FppwUEM8qQmlz4UYBEVGFGhNCtLo6vW5UutGglNDvS8GvZLFc9mT2BF8zWzFgjiCjvwdXDAc1M9JX36MnQp0ia\u002BfQZrbgWEOf8KuGb7OYikARXYjrIXTrj7DjJHG/VJQyVcGYIvC8McwNFzkbUaCorf5mXIifx\u002BmWE1jMrWAwOoC34\u002BcYJuBu\u002Bk95SiEPkRmslZcZglVYrmcEPgqbGPSf4ui04F/XayHYbhl\u002BNYBOM46j4T6ciL2AOtrLtO\u002BDTp7BkH8IH4c9g\u002BZ9G6IPmkj4FX/ombqE\u002BLT3Q6zk1rBgLeO3jdtYyK9gPrcIh\u002B7NZhe8I8RuQp/msJszxhlbVQ\u002BBLrKpgopquzbXBNoDLUjbGUykJykyjzup\u002BxjfuoclXv8JBJj5ZhYVhatxkIiQpu2UsVFMYWLzDyQLG8iWLY9WOYd0aRu2U0LMiKA7lEDMFwWzXj0NBMmYHOwKepCeyW8Zv216Z9kWr\u002BlwEyPLT6PRgJebjuNi51s42TQIkzGuQep44dsVXCctUwugP9yDT3rex6stwzgUiiOshRHW6xE1GuEXfnQE2vFm6wj3fIAIbTXI4k7LQdXnVwIKIuoAX87hfKUokoV13FwfR4f5FE41vQSfZuB49DnPq8cMwZXVa5hgTKcy0yg5JabdHUfaGcWveavq4c38Iubsv1kSy\u002BvFTVxekQcmIT3ua\u002BiBrugIqkGWz2Hv6tfXf8fY2g0vtsQyZu0ZaqTkpOrhbLmIuOZHlx7lM0sUnILuU3TRHmhFzsnhFr3N2DsIaUHMsXymMv\u002BAe1jisijdG7hTuopfrIdSaq85vBOqxxnzdejic1r7afGxLoWqKEJ6ItPiU31MUoXZtinmdZ8k7/wlruV/xvfZDSmz95YXyzYsZw1HjQc8LYu0oeJWZCnVEud6YrTJiRTLkF/jp\u002BxVjLHyi/JR7heUhu1KgcHdRK8xx5UZWmXm5PNqkltqkE3gIUrudxQbxe3CHFIs0Br2BCUsiiYZT00sMUnzvOUOGlVZG0dImYElchxblcu4lR/FWG4GKdfrMrs4KCghl/8quWxHWTbZAnp9IVpkV5nmta/zBj/ibukSvn28yr3e/ffjYMd\u002BEhfqwjgf7OConZyGqCRxKVfED5a3/F8A/wKUXZtBUQWfiQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-12-18T21:39:14.934Z",
               "EditorCaption": ""
             },
             {
@@ -288,14 +306,14 @@
               "RelativeDocumentMoniker": "LightSensorApiData.cs",
               "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\LightSensorApiData.cs",
               "RelativeToolTip": "LightSensorApiData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T17:43:20.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "ILightSensorApi.cs",
               "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\ILightSensorApi.cs",
               "RelativeDocumentMoniker": "ILightSensorApi.cs",
@@ -308,13 +326,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "ILamp.cs",
               "DocumentMoniker": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\ILamp.cs",
               "RelativeDocumentMoniker": "ILamp.cs",
               "ToolTip": "C:\\Users\\flowe\\Documents\\2_Testing \u0026 Security\\project_testing\\Lampify_testing\\ILamp.cs",
               "RelativeToolTip": "ILamp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T17:42:03.807Z",
               "EditorCaption": ""

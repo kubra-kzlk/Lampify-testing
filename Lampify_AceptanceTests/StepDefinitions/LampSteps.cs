@@ -9,9 +9,9 @@ namespace Lampify_testing.StepDefinitions
     public sealed class LampSteps : Feature
     {
         private const string UrlMockoon = "http://localhost:3000/getlightintensity";
-        private readonly ILamp lamp;
-        private readonly ILightSensorApi lightSensorApi;
-        private readonly LampController lampController;
+        private readonly ILamp lamp = null;
+        private readonly ILightSensorApi lightSensorApi = null;
+        private readonly LampController lampController = null;
 
         public LampSteps()
         {
@@ -67,7 +67,7 @@ namespace Lampify_testing.StepDefinitions
         {
             var lampStub = lamp as LampStub;
             Assert.NotNull(lampStub);
-            Assert.Equal(expectedBrightness, lampStub.Brightness);
+            Assert.AreEqual(expectedBrightness, lampStub.Brightness);
         }
 
         [And(@"the color should be (.*)")]
@@ -75,7 +75,7 @@ namespace Lampify_testing.StepDefinitions
         {
             var lampStub = lamp as LampStub;
             Assert.NotNull(lampStub);
-            Assert.Equal(expectedColor, lampStub.Color);
+            Assert.AreEqual(expectedColor, lampStub.Color);
         }
 
         [When(@"the lamp is toggled")]

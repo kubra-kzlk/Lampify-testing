@@ -5,103 +5,75 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit.Gherkin.Quick;
+using Xunit;
 
 namespace Lampify_testing.StepDefinitions
 {
     [FeatureFile("./Features/lamp.feature")]
     public sealed class LampFailureSteps : Feature
     {
-        private readonly ILamp lamp;
+        private const string UrlMockoon = "http://localhost:3000/getlightintensity";
+        private const string UrlMockoonException = "http://localhost:3000/getlightintensity/exception";
+
+        private readonly ILamp lamp = null;
+        private readonly ILightSensorApi lightSensorApi = null;
         private readonly LampController lampController;
         public LampFailureSteps()
         {
+            lightSensorApi = new LightSensorApiData();
             lamp = new LampStub();
-            lampController = new LampController(lamp, new LightSensorApiData());
+            lampController = new LampController(lamp, lightSensorApi);
         }
 
         [Given(@"the lamp is off")]
-        public void GivenLampIsOff()
+        public void GivenTheLampIsOff()
         {
             if (lamp.IsOn)
             {
-                lampController.ToggleLamp(); // Ensure the lamp is off
+                lampController.ToggleLamp();
             }
         }
-        [When(@"I try to turn on the lamp")]
-        public void WhenITryToTurnOnTheLamp()
+        [When(@"an exception occurs in the light sensor API")]
+        public void WhenExceptionOccursInLightSensorApi()
         {
-            // Simulate a failure to turn on the lamp
-            // This could be a method that fails to change the state
-            lampController.ToggleLamp(); // Attempt to turn on
-            lampController.ForceFailure(); // Simulate failure
+            lightSensorApi.Url = UrlMockoonException;
+            try
+            {
+                lampController.AdjustLighting(LampController.Mood.Cozy);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception caught: {ex.Message}");
+            }
         }
 
-        [Then(@"the lamp should be off")]
-        public void ThenLampShouldBeOff()
+        [Then(@"the lamp should remain off")]
+        public void ThenLampShouldRemainOff()
         {
-            Assert.False(lamp.IsOn, "The lamp should be OFF due to failure.");
+            Assert.False(lamp.IsOn, "The lamp should remain OFF due to API failure.");
         }
 
-        [Then(@"an error message should be displayed")]
-        public void ThenAnErrorMessageShouldBeDisplayed()
+        [When(@"the light intensity API returns invalid data")]
+        public void WhenLightIntensityApiReturnsInvalidData()
         {
-            // Check for an error message
-            Assert.True(lampController.HasErrorMessage, "An error message should be displayed.");
+            lightSensorApi.Url = $"{UrlMockoon}?lux=invalid";
+            try
+            {
+                lampController.AdjustLighting(LampController.Mood.Cozy);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception caught: {ex.Message}");
+            }
         }
 
-        [When(@"I set the brightness to (.*)")]
-        public void WhenISetTheBrightnessTo(int brightness)
+        [Then(@"the lamp should enter safe mode")]
+        public void ThenLampShouldEnterSafeMode()
         {
-            lampController.SetBrightness(brightness);
-            lampController.ForceFailure(); // Simulate failure
+            var lampStub = lamp as LampStub;
+            Assert.False(lampStub?.IsOn ?? true, "The lamp should be OFF in Safe Mode.");
+            Console.WriteLine("Lamp is in Safe Mode due to invalid data.");
         }
 
-        [Then(@"the brightness should remain at the previous level")]
-        public void ThenBrightnessShouldRemainAtPreviousLevel()
-        {
-            var previousBrightness = lamp.Brightness; // Store previous brightness
-            Assert.AreEqual(previousBrightness, lamp.Brightness, "The brightness should remain unchanged.");
-        }
-
-        [When(@"I change the color to (.*)")]
-        public void WhenIChangeTheColorTo(string color)
-        {
-            lampController.ChangeColor(color);
-            lampController.ForceFailure(); // Simulate failure
-        }
-
-        [Then(@"the color should remain the same")]
-        public void ThenColorShouldRemainTheSame()
-        {
-            var previousColor = lamp.Color; // Store previous color
-            Assert.AreEqual(previousColor, lamp.Color, "The color should remain unchanged.");
-        }
-
-        [When(@"I toggle the lamp")]
-        public void WhenIToggleTheLamp()
-        {
-
-            lampController.ToggleLamp();
-            lampController.ForceFailure(); // Simulate failure
-        }
-
-        [Then(@"the lamp should still be on")]
-        public void ThenLampShouldStillBeOn()
-        {
-            Assert.True(lamp.IsOn, "The lamp should still be ON due to failure.");
-        }
-
-        [When(@"I set the lamp to safe mode")]
-        public void WhenISetTheLampToSafeMode()
-        {
-            lampController.EnterSafeMode(); // Simulate entering safe mode
-            lampController.ForceFailure(); // Simulate failure
-        }
-
-        [Then(@"the lamp should be off in safe mode")]
-        public void ThenLampShouldBeOffInSafeMode()
-        {
-            Assert.False(lamp.IsOn, "The lamp should be OFF in Safe Mode.");
-        }
     }
 }
