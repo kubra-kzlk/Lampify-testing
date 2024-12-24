@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lampify_UnitTests", "..\Lam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lampify_IntegrationTests", "..\Lampify_IntegrationTests\Lampify_IntegrationTests.csproj", "{3F9ECEB4-E3EE-408F-B044-5D0E373025C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lampify_AceptanceTests", "..\Lampify_AceptanceTests\Lampify_AceptanceTests.csproj", "{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lampify_AcceptanceTests", "..\Lampify_AcceptanceTests\Lampify_AcceptanceTests.csproj", "{5B9416CE-F5E1-4792-895A-DC8CADE7B96F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{3F9ECEB4-E3EE-408F-B044-5D0E373025C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F9ECEB4-E3EE-408F-B044-5D0E373025C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F9ECEB4-E3EE-408F-B044-5D0E373025C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{405CBFB0-35E8-4EF6-A7E8-CE161E577FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B9416CE-F5E1-4792-895A-DC8CADE7B96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B9416CE-F5E1-4792-895A-DC8CADE7B96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B9416CE-F5E1-4792-895A-DC8CADE7B96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B9416CE-F5E1-4792-895A-DC8CADE7B96F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
