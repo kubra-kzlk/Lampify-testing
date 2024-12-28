@@ -1,15 +1,18 @@
-﻿using Lampify_testing;
-using Moq;
-using System;
+﻿using Xunit.Gherkin.Quick;
 using Xunit;
+using Moq;
+using Lampify_testing;
+using System;
 
-namespace LampifyTesting.Tests
+namespace Lampify_AcceptanceTests.StepDefinitions
 {
-    public class LampSteps
+    [FeatureFile("./Features/Lamp.feature")] // Ensure the path is correct
+    public sealed class LampSteps : Feature
     {
         private Mock<ILamp> _lampMock;
         private Mock<ILightSensorApi> _lightSensorApiMock;
         private LampController _lampController;
+        private Exception _caughtException;
 
         public LampSteps()
         {
@@ -18,103 +21,95 @@ namespace LampifyTesting.Tests
             _lampController = new LampController(_lampMock.Object, _lightSensorApiMock.Object);
         }
 
-        // Scenario: Given the lamp is off
-        [Fact]
+        [Given(@"the lamp is off")]
         public void GivenTheLampIsOff()
         {
-            // Arrange: Mock the lamp to be off
             _lampMock.Setup(l => l.IsOn).Returns(false);
+        }
 
-            // Act: No action needed, just verify the state
+        [Given(@"the lamp is on")]
+        public void GivenTheLampIsOn()
+        {
+            _lampMock.Setup(l => l.IsOn).Returns(true);
+        }
+
+        [When(@"the user tries to toggle the lamp")]
+        public void WhenTheUserTriesToToggleTheLamp()
+        {
+            // If the lamp is off, it should be turned on, otherwise it should be turned off
+            if (_lampMock.Object.IsOn)
+            {
+                // Ensure the lamp is on and toggle it (should turn off)
+                _lampMock.Setup(l => l.IsOn).Returns(true); // Lamp is on
+                _lampController.ToggleLamp(); // Toggle the lamp
+                _lampMock.Verify(l => l.TurnOff(), Times.Once); // Verify TurnOff was called
+                _lampMock.Setup(l => l.IsOn).Returns(false); // Update the mock state to off
+            }
+            else
+            {
+                // Ensure the lamp is off and toggle it (should turn on)
+                _lampMock.Setup(l => l.IsOn).Returns(false); // Lamp is off
+                _lampController.ToggleLamp(); // Toggle the lamp
+                _lampMock.Verify(l => l.TurnOn(), Times.Once); // Verify TurnOn was called
+                _lampMock.Setup(l => l.IsOn).Returns(true); // Update the mock state to on
+            }
+        }
+
+
+        [When(@"the user sets the mood to Cozy")]
+        public void WhenTheUserSetsTheMoodToCozy()
+        {
+            _lampController.AdjustLighting(LampController.Mood.Cozy);
+        }
+
+        [When(@"the user sets the mood to Angry")]
+        public void WhenTheUserSetsTheMoodToAngry()
+        {
+            _lampController.AdjustLighting(LampController.Mood.Angry);
+        }
+
+        [When(@"the user sets the mood to Bright")]
+        public void WhenTheUserSetsTheMoodToBright()
+        {
+            _lampController.AdjustLighting(LampController.Mood.Bright);
+        }
+
+        [When(@"the user tries to apply settings with invalid brightness of (.*)")]
+        public void WhenTheUserTriesToApplyInvalidBrightness(int invalidBrightness)
+        {
+            _caughtException = Record.Exception(() =>
+            {
+                _lampController.ApplySettings(invalidBrightness, "White");
+            });
+        }
+
+        [Then(@"the system should throw an ArgumentOutOfRangeException")]
+        public void ThenSystemShouldThrowArgumentOutOfRangeException()
+        {
+            Assert.NotNull(_caughtException);
+            Assert.IsType<ArgumentOutOfRangeException>(_caughtException);
+        }
+
+        [Then(@"the lamp should remain off")]
+        public void ThenLampShouldRemainOff()
+        {
+            _lampMock.Verify(l => l.TurnOff(), Times.Never);
             Assert.False(_lampMock.Object.IsOn);
         }
 
-        // Scenario: When the user toggles the lamp
-        [Fact]
-        public void WhenTheUserTogglesTheLamp()
+        [Then(@"the lamp should be on")]
+        public void ThenLampShouldBeOn()
         {
-            // Arrange: Mock the lamp to be off
-            _lampMock.Setup(l => l.IsOn).Returns(false);
-
-            // Act: Toggle the lamp
-            _lampController.ToggleLamp();
-
-            // Assert: Verify that the lamp was turned on
-            _lampMock.Verify(l => l.TurnOn(), Times.Once);
-        }
-
-        // Scenario: Then the lamp should be on
-        [Fact]
-        public void ThenTheLampShouldBeOn()
-        {
-            // Arrange: Mock the lamp to be off initially
-            _lampMock.Setup(l => l.IsOn).Returns(false);  // Lamp is initially off
-
-            // Act: Toggle the lamp
-            _lampController.ToggleLamp();
-
-            // Assert: Verify that the lamp was turned on
-            _lampMock.Verify(l => l.TurnOn(), Times.Once);  // Ensure TurnOn was called
-            _lampMock.Verify(l => l.TurnOff(), Times.Never); // Ensure TurnOff was not called
+            _lampMock.Verify(l => l.TurnOn(), Times.Once); // Ensure TurnOn is called once
+            Assert.True(_lampMock.Object.IsOn); // Ensure the lamp is on
         }
 
 
-        // Scenario: Given the lamp is on
-        [Fact]
-        public void GivenTheLampIsOn()
+        [Then(@"the lamp should have color ""(.*)"" and brightness (.*)")]
+        public void ThenLampShouldHaveColorAndBrightness(string color, int brightness)
         {
-            // Arrange: Mock the lamp to be on
-            _lampMock.Setup(l => l.IsOn).Returns(true);
-
-            // Act: No action needed, just verify the state
-            Assert.True(_lampMock.Object.IsOn);
+            _lampMock.Verify(l => l.SetColor(color), Times.Once);
+            _lampMock.Verify(l => l.SetBrightness(brightness), Times.Once);
         }
-
-        // Scenario: When the user sets the mood to Cozy
-        [Fact]
-        public void WhenTheUserSetsTheMoodToCozy()
-        {
-            // Arrange: Mock the lamp to be on
-            _lampMock.Setup(l => l.IsOn).Returns(true);
-
-            // Act: Set the mood to Cozy
-            _lampController.AdjustLighting(LampController.Mood.Cozy);
-
-            // Assert: Verify that the lamp settings are applied as per Cozy mood
-            _lampMock.Verify(l => l.SetBrightness(50), Times.Once);
-            _lampMock.Verify(l => l.SetColor("Red"), Times.Once);
-        }
-
-        // Scenario: When the user sets the mood to Angry
-        [Fact]
-        public void WhenTheUserSetsTheMoodToAngry()
-        {
-            // Arrange: Mock the lamp to be on
-            _lampMock.Setup(l => l.IsOn).Returns(true);
-
-            // Act: Set the mood to Angry
-            _lampController.AdjustLighting(LampController.Mood.Angry);
-
-            // Assert: Verify that the lamp settings are applied as per Angry mood
-            _lampMock.Verify(l => l.SetBrightness(100), Times.Once);
-            _lampMock.Verify(l => l.SetColor("Red"), Times.Once);
-        }
-
-        // Scenario: When the user sets the mood to Bright
-        [Fact]
-        public void WhenTheUserSetsTheMoodToBright()
-        {
-            // Arrange: Mock the lamp to be on
-            _lampMock.Setup(l => l.IsOn).Returns(true);
-
-            // Act: Set the mood to Bright
-            _lampController.AdjustLighting(LampController.Mood.Bright);
-
-            // Assert: Verify that the lamp settings are applied as per Bright mood
-            _lampMock.Verify(l => l.SetBrightness(100), Times.Once);
-            _lampMock.Verify(l => l.SetColor("White"), Times.Once);
-        }
-
-
     }
 }
