@@ -89,11 +89,18 @@ namespace Lampify_UnitTests
         public void AdjustLighting_ThrowsException_WhenInvalidMood()
         {
             // Arrange
-            _lightSensorApiMock.Setup(api => api.GetLightIntensity()).Returns(300); // Simulate dark environment
+            _lightSensorApiMock.Setup(api => api.GetLightIntensity()).Returns(300); // Simulate normal light environment
+
             // Act & Assert
-            Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
-                _lampController.AdjustLighting((LampController.Mood)999)); // Invalid mood
+            var exception = Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+                _lampController.AdjustLighting((LampController.Mood)999)); // Invalid mood (out of range)
+
+            // Update the test to match the complete exception message
+            Assert.AreEqual("Invalid mood specified. (Parameter 'mood')", exception.Message); // Expect the full message
+            Assert.AreEqual("mood", exception.ParamName); // Verify the parameter name
         }
+
+
 
         //E - Error: Test Error Handling
         // checks that the lamp controller handles errors gracefully when the light sensor fails. You can simulate an error by throwing an exception in the GetLightIntensity method.
@@ -102,9 +109,13 @@ namespace Lampify_UnitTests
         {
             // Arrange
             _lightSensorApiMock.Setup(api => api.GetLightIntensity()).Throws(new Exception("Sensor failure")); // Simulate sensor failure
+
             // Act & Assert
-            Assert.ThrowsException<Exception>(() =>
-                _lampController.AdjustLighting(LampController.Mood.Cozy)); // Expect an exception due to sensor failure
+            var exception = Assert.ThrowsException<Exception>(() =>
+                _lampController.AdjustLighting(LampController.Mood.Cozy));
+
+            // Optionally, verify the exception message
+            Assert.AreEqual("Sensor failure", exception.Message);
         }
     }
 }

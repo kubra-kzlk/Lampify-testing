@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lampify_testing
 {// controller bvt logica vr h aansturen vd lamp obvd lichtsterkte en mood, die je kan testen, Verantwoordelijk voor de bediening van de lamp, bv het in- en uitschakelen.
-    public class LampController 
-    {       
+    public class LampController
+    {
         private readonly ILightSensorApi _lightSensorApi; //DI, api vr lichtsterkte
         private readonly ILamp _lamp;
 
@@ -29,7 +29,7 @@ namespace Lampify_testing
         public LampController(ILamp lamp, ILightSensorApi lightSensorApi)
         {
             _lamp = lamp;
-            _lightSensorApi = lightSensorApi;           
+            _lightSensorApi = lightSensorApi;
         }
 
         public void ToggleLamp()//zet de lamp aan als deze uit is, of uit als deze aan is
@@ -47,26 +47,42 @@ namespace Lampify_testing
                 }
             }
         }
-        public void ApplySettings(int brightness, string color)//past helderheid en kleur aan, int helderheid, string kleur
-        {//error behandeling: gebruik van exception
+        public void ApplySettings(int brightness, string color)
+        {
+            if (!_lamp.IsOn)
+            {
+                throw new InvalidOperationException("Cannot apply settings when the lamp is off.");
+            }
+
             try
             {
+                // Validate the brightness range (0 to 100)
+                if (brightness < 0 || brightness > 100)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(brightness), "Brightness must be between 0 and 100.");
+                }
+
+                // If brightness is valid, proceed with setting the brightness and color
                 _lamp.SetBrightness(brightness);
                 _lamp.SetColor(color);
-                Console.WriteLine($"[{DateTime.Now}] Settings applied: Brightness={brightness}, Color={color}");//loggen v aanpassing v instelling
+
+                Console.WriteLine($"[{DateTime.Now}] Settings applied: Brightness={brightness}, Color={color}"); // Log the applied settings
                 _errorCount = 0; // Reset error count on success
             }
             catch (Exception ex)
             {
                 _errorCount++;
-                Console.WriteLine($"[{DateTime.Now}] Error applying settings: {ex.Message}. Error count: {_errorCount}");//logging: error bij instellen van helderheid/kleur
+                Console.WriteLine($"[{DateTime.Now}] Error applying settings: {ex.Message}. Error count: {_errorCount}"); // Log error
+
                 if (_errorCount >= MaxErrorCount)
                 {
-                    EnterSafeMode();
+                    EnterSafeMode(); // Enter safe mode if too many errors occur
                 }
-                throw;
+
+                throw; // Re-throw the exception to ensure it is caught by the unit test
             }
         }
+
 
         private void EnterSafeMode()
         {//Wanneer de lamp naar de veilige modus gaat, wordt dit gelogd
@@ -118,6 +134,7 @@ namespace Lampify_testing
                 {
                     EnterSafeMode(); // Enter safe mode if too many errors occur
                 }
+                throw;
             }
         }
 

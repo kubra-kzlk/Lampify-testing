@@ -13,3 +13,6 @@ C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\ob
 C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.pdb
 C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.genruntimeconfig.cache
 C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\ref\Lampify_testing.dll
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_testing.csproj.AssemblyReference.cache
+C:\Users\flowe\Documents\2_Testing & Security\project_testing\Lampify_testing\obj\Debug\net6.0\Lampify_.326E310D.Up2Date

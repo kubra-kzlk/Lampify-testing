@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lampify_IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0ee2678b6e292bb489f86d3090b205cd465fa37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66ba505e9267ccd989c7b7982e1cb7bd1ec0830f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lampify_IntegrationTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lampify_IntegrationTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

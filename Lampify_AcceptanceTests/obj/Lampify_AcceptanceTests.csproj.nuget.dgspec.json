@@ -53,13 +53,9 @@
               "target": "Package",
               "version": "[17.5.0, )"
             },
-            "SpecFlow": {
+            "Moq": {
               "target": "Package",
-              "version": "[3.9.74, )"
-            },
-            "SpecFlow.xUnit": {
-              "target": "Package",
-              "version": "[3.9.74, )"
+              "version": "[4.20.72, )"
             },
             "Xunit.Gherkin.Quick": {
               "target": "Package",
