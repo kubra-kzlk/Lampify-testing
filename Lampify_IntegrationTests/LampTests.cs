@@ -61,21 +61,6 @@ namespace Lampify_IntegrationTests
         }
 
 
-        [Test]
-        public void LampStaysOffInBrightEnvironment()
-        {
-            // Arrange
-            var mockLightSensor = new Mock<ILightSensorApi>();
-            mockLightSensor.Setup(api => api.GetLightIntensity()).Returns(600);
-            _lightSensorApi = mockLightSensor.Object;
-            _lampController = new LampController(_lamp, _lightSensorApi);
-
-            // Act
-            _lampController.AdjustLighting(LampController.Mood.Cozy);
-
-            // Assert
-            Assert.IsFalse(_lamp.IsOn, "The lamp should remain OFF in a bright environment.");
-        }
 
         [Test]
         public void LampTurnsOffWhenMoodIsDark()

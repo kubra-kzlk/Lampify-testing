@@ -3,9 +3,10 @@
     "",
     "\\Lampify_AcceptanceTests",
     "\\Lampify_AcceptanceTests\\StepDefinitions",
+    "\\Lampify_IntegrationTests",
     "\\Lampify_testing",
     "\\Lampify_UnitTests"
   ],
-  "SelectedNode": "\\Lampify_AcceptanceTests\\StepDefinitions\\LampFailureSteps.cs",
+  "SelectedNode": "\\Lampify_IntegrationTests\\LampTests.cs",
   "PreviewInSolutionExplorer": false
 }

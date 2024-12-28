@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lampify_UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66ba505e9267ccd989c7b7982e1cb7bd1ec0830f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aade965e37ba70f1f01095f9966e343c1ec02603")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lampify_UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lampify_UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
