@@ -5,8 +5,6 @@
     When the user tries to toggle the lamp
     Then the lamp should be on
 
-  
-
   Scenario: Given the lamp is on, When the user sets the mood to Cozy, Then the lamp should have color "Red" and brightness 50
     Given the lamp is on
     When the user sets the mood to Cozy

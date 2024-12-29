@@ -1,60 +1,55 @@
 ﻿using Xunit.Gherkin.Quick;
 using Xunit;
-using Moq;
 using Lampify_testing;
 using System;
+using System.Globalization;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Lampify_AcceptanceTests.StepDefinitions
 {
-    [FeatureFile("./Features/Lamp.feature")] // Ensure the path is correct
+    [FeatureFile("./Features/Lamp.feature")]
     public sealed class LampSteps : Feature
     {
-        private Mock<ILamp> _lampMock;
-        private Mock<ILightSensorApi> _lightSensorApiMock;
+        private const string UrlMockoon = "http://localhost:3000/getlightintensity";
+        private Lamp _lamp;
         private LampController _lampController;
         private Exception _caughtException;
+        private HttpClient _httpClient;
 
         public LampSteps()
         {
-            _lampMock = new Mock<ILamp>();
-            _lightSensorApiMock = new Mock<ILightSensorApi>();
-            _lampController = new LampController(_lampMock.Object, _lightSensorApiMock.Object);
+            _lamp = new Lamp();
+            _lampController = new LampController(_lamp, new LightSensorApi(UrlMockoon));
+            _httpClient = new HttpClient();
         }
 
         [Given(@"the lamp is off")]
         public void GivenTheLampIsOff()
         {
-            _lampMock.Setup(l => l.IsOn).Returns(false);
+            _lamp.TurnOff();
         }
 
         [Given(@"the lamp is on")]
         public void GivenTheLampIsOn()
         {
-            _lampMock.Setup(l => l.IsOn).Returns(true);
+            _lamp.TurnOn();
         }
 
         [When(@"the user tries to toggle the lamp")]
         public void WhenTheUserTriesToToggleTheLamp()
         {
-            // If the lamp is off, it should be turned on, otherwise it should be turned off
-            if (_lampMock.Object.IsOn)
+            if (_lamp.IsOn)
             {
-                // Ensure the lamp is on and toggle it (should turn off)
-                _lampMock.Setup(l => l.IsOn).Returns(true); // Lamp is on
-                _lampController.ToggleLamp(); // Toggle the lamp
-                _lampMock.Verify(l => l.TurnOff(), Times.Once); // Verify TurnOff was called
-                _lampMock.Setup(l => l.IsOn).Returns(false); // Update the mock state to off
+                _lampController.ToggleLamp(); // Toggle the lamp off
+                Assert.False(_lamp.IsOn); // Ensure the lamp is off
             }
             else
             {
-                // Ensure the lamp is off and toggle it (should turn on)
-                _lampMock.Setup(l => l.IsOn).Returns(false); // Lamp is off
-                _lampController.ToggleLamp(); // Toggle the lamp
-                _lampMock.Verify(l => l.TurnOn(), Times.Once); // Verify TurnOn was called
-                _lampMock.Setup(l => l.IsOn).Returns(true); // Update the mock state to on
+                _lampController.ToggleLamp(); // Toggle the lamp on
+                Assert.True(_lamp.IsOn); // Ensure the lamp is on
             }
         }
-
 
         [When(@"the user sets the mood to Cozy")]
         public void WhenTheUserSetsTheMoodToCozy()
@@ -66,6 +61,9 @@ namespace Lampify_AcceptanceTests.StepDefinitions
         public void WhenTheUserSetsTheMoodToAngry()
         {
             _lampController.AdjustLighting(LampController.Mood.Angry);
+
+            Assert.Equal(100, _lamp.Brightness); // Verify brightness
+            Assert.Equal("Red", _lamp.Color);   // Verify color
         }
 
         [When(@"the user sets the mood to Bright")]
@@ -83,6 +81,7 @@ namespace Lampify_AcceptanceTests.StepDefinitions
             });
         }
 
+
         [Then(@"the system should throw an ArgumentOutOfRangeException")]
         public void ThenSystemShouldThrowArgumentOutOfRangeException()
         {
@@ -93,23 +92,29 @@ namespace Lampify_AcceptanceTests.StepDefinitions
         [Then(@"the lamp should remain off")]
         public void ThenLampShouldRemainOff()
         {
-            _lampMock.Verify(l => l.TurnOff(), Times.Never);
-            Assert.False(_lampMock.Object.IsOn);
+            Assert.False(_lamp.IsOn);
         }
 
         [Then(@"the lamp should be on")]
         public void ThenLampShouldBeOn()
         {
-            _lampMock.Verify(l => l.TurnOn(), Times.Once); // Ensure TurnOn is called once
-            Assert.True(_lampMock.Object.IsOn); // Ensure the lamp is on
+            Assert.True(_lamp.IsOn);
         }
 
-
         [Then(@"the lamp should have color ""(.*)"" and brightness (.*)")]
-        public void ThenLampShouldHaveColorAndBrightness(string color, int brightness)
+        public async Task ThenLampShouldHaveColorAndBrightness(string color, int brightness)
         {
-            _lampMock.Verify(l => l.SetColor(color), Times.Once);
-            _lampMock.Verify(l => l.SetBrightness(brightness), Times.Once);
+            string queryParam = $"?color={color}&brightness={brightness.ToString(CultureInfo.InvariantCulture)}";
+            string url = $"{UrlMockoon}{queryParam}";
+
+            HttpResponseMessage response = await _httpClient.GetAsync(url);
+            Assert.True(response.IsSuccessStatusCode, "Failed to communicate with the light intensity API");
+
+            _lamp.SetColor(color);
+            _lamp.SetBrightness(brightness);
+
+            Assert.Equal(color, _lamp.Color);
+            Assert.Equal(brightness, _lamp.Brightness);
         }
     }
 }

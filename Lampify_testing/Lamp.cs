@@ -8,28 +8,44 @@ namespace Lampify_testing
 { //Bevat de logica vr aan/uit zetten, aanpassen helderheid en kleur.
     public class Lamp : ILamp
     {
-        public bool IsOn => throw new NotImplementedException();
+        private bool _isOn; // Backing field for IsOn property.
+        private int _brightness;
+        private string _color;
 
-        public int Brightness => throw new NotImplementedException();
+        public bool IsOn => _isOn; // Read-only property.
 
-        public void TurnOn() //lamp aanzetten
+        public int Brightness => _brightness;
+
+        public IEnumerable<char> Color => _color;
+
+        public void TurnOn() // Turn the lamp on.
         {
-            throw new NotImplementedException();
+            _isOn = true;
         }
 
-        public void TurnOff() //lamp uitzetten
+        public void TurnOff() // Turn the lamp off.
         {
-            throw new NotImplementedException();
+            _isOn = false;
         }
 
         public void SetBrightness(int brightness)
         {
-            throw new NotImplementedException();
+            if (brightness < 0 || brightness > 100)
+            {
+                throw new ArgumentOutOfRangeException(nameof(brightness), "Brightness must be between 0 and 100.");
+            }
+
+            _brightness = brightness;
         }
 
         public void SetColor(string color)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(color))
+            {
+                throw new ArgumentException("Color cannot be null or empty.", nameof(color));
+            }
+
+            _color = color;
         }
     }
 

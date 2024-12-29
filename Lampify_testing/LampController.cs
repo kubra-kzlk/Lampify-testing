@@ -140,22 +140,26 @@ namespace Lampify_testing
 
         public void TurnOn()
         {
-            throw new NotImplementedException();
+            _lamp.TurnOn();
+            Console.WriteLine("Lamp turned ON.");
         }
 
         public void TurnOff()
         {
-            throw new NotImplementedException();
+            _lamp.TurnOff();
+            Console.WriteLine("Lamp turned OFF.");
         }
 
         public void SetBrightness(int brightness)
         {
-            throw new NotImplementedException();
+            _lamp.SetBrightness(brightness);
+            Console.WriteLine($"Lamp brightness set to {brightness}.");
         }
 
         public void SetColor(string color)
         {
-            throw new NotImplementedException();
+            _lamp.SetColor(color);
+            Console.WriteLine($"Lamp color set to {color}.");
         }
     }
 }

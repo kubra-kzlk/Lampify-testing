@@ -1,7 +1,6 @@
 using System.Globalization;
 using Lampify_testing;
 using Moq;
-using NUnit.Framework;
 
 namespace Lampify_IntegrationTests
 {
@@ -190,7 +189,7 @@ namespace Lampify_IntegrationTests
             {
                 try
                 {
-                    _lampController.AdjustLighting(LampController.Mood.Cozy); // Three calls that result in failures
+                    _lampController.AdjustLighting(LampController.Mood.Cozy); 
                 }
                 catch (Exception ex)
                 {
