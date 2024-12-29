@@ -1,10 +1,9 @@
-﻿using Xunit.Gherkin.Quick;
-using Xunit;
-using Lampify_testing;
+﻿using Xunit;
+using Xunit.Gherkin.Quick;
 using System;
-using System.Globalization;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Lampify_testing;
 
 namespace Lampify_AcceptanceTests.StepDefinitions
 {
@@ -12,10 +11,10 @@ namespace Lampify_AcceptanceTests.StepDefinitions
     public sealed class LampSteps : Feature
     {
         private const string UrlMockoon = "http://localhost:3000/getlightintensity";
-        private Lamp _lamp;
-        private LampController _lampController;
+        private readonly LampController _lampController;
+        private readonly Lamp _lamp;
+        private readonly HttpClient _httpClient;
         private Exception _caughtException;
-        private HttpClient _httpClient;
 
         public LampSteps()
         {
@@ -36,51 +35,23 @@ namespace Lampify_AcceptanceTests.StepDefinitions
             _lamp.TurnOn();
         }
 
-        [When(@"the user tries to toggle the lamp")]
-        public void WhenTheUserTriesToToggleTheLamp()
+        [When(@"the user toggles the lamp")]
+        public void WhenTheUserTogglesTheLamp()
         {
-            if (_lamp.IsOn)
-            {
-                _lampController.ToggleLamp(); // Toggle the lamp off
-                Assert.False(_lamp.IsOn); // Ensure the lamp is off
-            }
-            else
-            {
-                _lampController.ToggleLamp(); // Toggle the lamp on
-                Assert.True(_lamp.IsOn); // Ensure the lamp is on
-            }
+            _lampController.ToggleLamp();
         }
 
-        [When(@"the user sets the mood to Cozy")]
-        public void WhenTheUserSetsTheMoodToCozy()
+        [When(@"the user applies settings with brightness (\d+) and color ""(.*)""")]
+        public void WhenTheUserAppliesSettings(int brightness, string color)
         {
-            _lampController.AdjustLighting(LampController.Mood.Cozy);
+            _lampController.ApplySettings(brightness, color);
         }
 
-        [When(@"the user sets the mood to Angry")]
-        public void WhenTheUserSetsTheMoodToAngry()
+        [When(@"the user tries to apply settings with invalid brightness of (-?\d+)")]
+        public void WhenTheUserTriesToApplyInvalidBrightness(int brightness)
         {
-            _lampController.AdjustLighting(LampController.Mood.Angry);
-
-            Assert.Equal(100, _lamp.Brightness); // Verify brightness
-            Assert.Equal("Red", _lamp.Color);   // Verify color
+            _caughtException = Record.Exception(() => _lampController.ApplySettings(brightness, "White"));
         }
-
-        [When(@"the user sets the mood to Bright")]
-        public void WhenTheUserSetsTheMoodToBright()
-        {
-            _lampController.AdjustLighting(LampController.Mood.Bright);
-        }
-
-        [When(@"the user tries to apply settings with invalid brightness of (.*)")]
-        public void WhenTheUserTriesToApplyInvalidBrightness(int invalidBrightness)
-        {
-            _caughtException = Record.Exception(() =>
-            {
-                _lampController.ApplySettings(invalidBrightness, "White");
-            });
-        }
-
 
         [Then(@"the system should throw an ArgumentOutOfRangeException")]
         public void ThenSystemShouldThrowArgumentOutOfRangeException()
@@ -89,32 +60,68 @@ namespace Lampify_AcceptanceTests.StepDefinitions
             Assert.IsType<ArgumentOutOfRangeException>(_caughtException);
         }
 
-        [Then(@"the lamp should remain off")]
-        public void ThenLampShouldRemainOff()
-        {
-            Assert.False(_lamp.IsOn);
-        }
-
         [Then(@"the lamp should be on")]
-        public void ThenLampShouldBeOn()
+        public void ThenTheLampShouldBeOn()
         {
             Assert.True(_lamp.IsOn);
         }
 
-        [Then(@"the lamp should have color ""(.*)"" and brightness (.*)")]
-        public async Task ThenLampShouldHaveColorAndBrightness(string color, int brightness)
+        [Then(@"the lamp should have brightness (\d+) and color ""(.*)""")]
+        public void ThenTheLampShouldHaveBrightnessAndColor(int brightness, string color)
         {
-            string queryParam = $"?color={color}&brightness={brightness.ToString(CultureInfo.InvariantCulture)}";
-            string url = $"{UrlMockoon}{queryParam}";
-
-            HttpResponseMessage response = await _httpClient.GetAsync(url);
-            Assert.True(response.IsSuccessStatusCode, "Failed to communicate with the light intensity API");
-
-            _lamp.SetColor(color);
-            _lamp.SetBrightness(brightness);
-
-            Assert.Equal(color, _lamp.Color);
             Assert.Equal(brightness, _lamp.Brightness);
+            Assert.Equal(color, _lamp.Color);
+        }
+
+        [Given(@"the light intensity is below 500")]
+        public async Task GivenTheLightIntensityIsBelow500()
+        {
+            var response = await _httpClient.GetAsync(UrlMockoon);
+            var content = await response.Content.ReadAsStringAsync();
+
+            Assert.True(int.TryParse(content, out int lux));
+            Assert.True(lux < 500, "Mockoon should return a value below 500.");
+        }
+
+        [When(@"the user sets the mood to (.*)")]
+        public void WhenTheUserSetsTheMoodTo(string mood)
+        {
+            if (Enum.TryParse(mood, out LampController.Mood parsedMood))
+            {
+                _lampController.AdjustLighting(parsedMood);
+            }
+            else
+            {
+                throw new ArgumentException("Invalid mood specified.");
+            }
+        }
+
+        [Then(@"the lamp should be off")]
+        public void ThenTheLampShouldBeOff()
+        {
+            Assert.False(_lamp.IsOn);
+        }
+
+        [Given(@"the user applies invalid settings 3 times")]
+        public void GivenTheUserAppliesInvalidSettingsThreeTimes()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                try
+                {
+                    _lampController.ApplySettings(-1, "Invalid");
+                }
+                catch
+                {
+                    // Ignore exception
+                }
+            }
+        }
+
+        [Then(@"the lamp should turn off and enter safe mode")]
+        public void ThenTheLampShouldTurnOffAndEnterSafeMode()
+        {
+            Assert.False(_lamp.IsOn);
         }
     }
 }

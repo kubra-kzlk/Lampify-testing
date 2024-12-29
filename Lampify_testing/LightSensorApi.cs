@@ -24,7 +24,7 @@ namespace Lampify_testing
         public async Task<int> GetLightIntensity()
         {
             using HttpClient client = new HttpClient();
-            HttpResponseMessage response = await client.GetAsync(_urlMockoon);
+            var response = await client.GetAsync(_urlMockoon);
 
             if (!response.IsSuccessStatusCode)
             {
