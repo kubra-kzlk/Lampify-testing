@@ -12,3 +12,4 @@ Project Testing & Security 2024-2025 2e jaarsvak
 * Behavior-Driven Development (BDD) met Gherkin voor het schrijven van testscenario's.
 * Integratie- en acceptatietests om te controleren of de verschillende systeemonderdelen goed samenwerken.
 * Agile methodologie voor het beheer van het project.
+

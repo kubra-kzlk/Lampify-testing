@@ -3,15 +3,18 @@
   <Class Name="Lampify_testing.Lamp">
     <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQAiAAAAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAAIAAAAAAAAAAAAAQAAAAAIQAiAgAAAAIA=</HashCode>
       <FileName>Lamp.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Lampify_testing.LampController">
     <Position X="1.25" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <NestedTypes>
-      <Enum Name="Lampify_testing.LampController.Mood" Collapsed="true">
+      <Enum Name="Lampify_testing.LampController.Mood">
         <TypeIdentifier>
           <NewMemberFileName>LampController.cs</NewMemberFileName>
         </TypeIdentifier>
@@ -25,7 +28,7 @@
   <Class Name="Lampify_testing.LightSensorApi">
     <Position X="4.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAgAAAAAAAAAAAAEAAAAAAAAAAAAAACAAEAAAAAAA=</HashCode>
       <FileName>LightSensorApi.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -49,14 +52,14 @@
     <Position X="3" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAgAAAAAAAAAAAAAABAAAAAQAAAACAQAiAgAAAAIA=</HashCode>
-      <FileName>LampStub.cs</FileName>
+      <FileName>Lampstub.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="Lampify_testing.ILamp">
     <Position X="1.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQAiAAAAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQAiAAAAAAIA=</HashCode>
       <FileName>ILamp.cs</FileName>
     </TypeIdentifier>
   </Interface>
