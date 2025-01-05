@@ -18,21 +18,21 @@ namespace Lampify_testing
 
         public IEnumerable<char> Color => _color;
 
-        public void TurnOn() // Turn the lamp on.
+        public void TurnOn() 
         {
             _isOn = true;
         }
 
-        public void TurnOff() // Turn the lamp off.
+        public void TurnOff() 
         {
             _isOn = false;
         }
 
         public void SetBrightness(int brightness)
         {
-            if (brightness < 0 || brightness > 100)
+            if (brightness < 0 || brightness > 500)
             {
-                throw new ArgumentOutOfRangeException(nameof(brightness), "Brightness must be between 0 and 100.");
+                throw new ArgumentOutOfRangeException(nameof(brightness), "Brightness must be between 0 and 500.");
             }
 
             _brightness = brightness;

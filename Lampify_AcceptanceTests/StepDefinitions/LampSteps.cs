@@ -32,10 +32,10 @@ namespace Lampify_AcceptanceTests.StepDefinitions
         [Given(@"the lamp is on")]
         public void GivenTheLampIsOn()
         {
-            _lamp.TurnOn();
+            _lampController.TurnOn(); // Ensure the lamp is in the "on" state                    
         }
 
-        [When(@"the user toggles the lamp")]
+         [When(@"the user toggles the lamp")]
         public void WhenTheUserTogglesTheLamp()
         {
             _lampController.ToggleLamp();
@@ -118,10 +118,17 @@ namespace Lampify_AcceptanceTests.StepDefinitions
             }
         }
 
+        [When(@"the user applies settings with brightness (\d+)")]
+        public void WhenTheUserAppliesSettingsWithBrightness(int brightness)
+        {
+            _lampController.ApplySettings(brightness, "White"); // Apply specific brightness settings
+        }
+
         [Then(@"the lamp should turn off and enter safe mode")]
         public void ThenTheLampShouldTurnOffAndEnterSafeMode()
         {
-            Assert.False(_lamp.IsOn);
+            Assert.False(_lamp.IsOn, "The lamp should be turned off.");
+            // The LampController logs safe mode entry; you can add additional validation for testing safe mode if needed.
         }
     }
 }

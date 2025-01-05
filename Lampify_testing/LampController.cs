@@ -56,10 +56,11 @@ namespace Lampify_testing
 
             try
             {
-                // Validate the brightness range (0 to 100)
-                if (brightness < 0 || brightness > 100)
+                // Validate the brightness range (0 to 500)
+                if (brightness < 0 || brightness > 500)
                 {
-                    throw new ArgumentOutOfRangeException(nameof(brightness), "Brightness must be between 0 and 100.");
+                    Console.WriteLine("Invalid brightness detected. Throwing exception.");
+                    throw new ArgumentOutOfRangeException(nameof(brightness), "Brightness must be between 0 and 500.");
                 }
 
                 // If brightness is valid, proceed with setting the brightness and color
